@@ -4,15 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { SwiperModule } from 'angular2-useful-swiper';
+
+import { SwiperComponent} from './components/swiper/swiper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    SwiperComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
