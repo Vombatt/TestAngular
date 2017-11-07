@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+import {TextContent} from './classes/TextContent';
+import {SWIPERS} from './mocks/swiper-mock';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my perfect app!!!';
+  swiperDivs: Array<TextContent> = SWIPERS;
+
+  constructor() {
+  }
+
 }

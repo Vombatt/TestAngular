@@ -1,21 +1,18 @@
-<div>
+<div id="swiper-container">
   <swiper [config]="config">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
-      <div class="swiper-slide"><img width="1400px" src='../../assets/images/Bridge.png'></div>
+      <div class="swiper-slide" *ngFor="let swiperDiv of content">
+        <div style="width: 70%; text-align: center">
+          <div class="title">{{swiperDiv.title | uppercase}}</div>
+          <div class="description">{{swiperDiv.description}}</div>
+        </div>
+      </div>
+
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
   </swiper>
 </div>
