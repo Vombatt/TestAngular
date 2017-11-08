@@ -8,6 +8,8 @@ import { SwiperModule } from 'angular2-useful-swiper';
 
 import { SwiperComponent} from './components/swiper/swiper.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FeaturesComponent } from './components/features/features.component';
     HeaderComponent,
     MenuComponent,
     SwiperComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    GalleryComponent,
+    GalleryItemComponent
   ],
   imports: [
     BrowserModule,

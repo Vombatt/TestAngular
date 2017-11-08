@@ -1,0 +1,25 @@
+.gallery {
+  background-color: #ececec;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+app-gallery-item {
+  margin: 10px;
+  width: 300px;
+  border: 1px solid #c5c5c5;
+}
+
+@media (max-width: 360px) {
+  .item-container {
+    padding: 0;
+  }
+}
