@@ -10,6 +10,7 @@ import { SwiperComponent} from './components/swiper/swiper.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-item.component';
+import { PartnersComponent } from './components/partners/partners.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GalleryItemComponent } from './components/gallery/gallery-item/gallery-
     SwiperComponent,
     FeaturesComponent,
     GalleryComponent,
-    GalleryItemComponent
+    GalleryItemComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
