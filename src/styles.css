@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('assets/css/common.scss');
 @import url('assets/css/fonts.scss');
+
 .swiper-pagination-bullet {
   border: solid!important;
-  border-color: #ffffff!important;;
+  border-color: #ffffff!important;
   border-width: 3px!important;
   opacity: 1 !important;
 }

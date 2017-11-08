@@ -7,13 +7,15 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SwiperModule } from 'angular2-useful-swiper';
 
 import { SwiperComponent} from './components/swiper/swiper.component';
+import { FeaturesComponent } from './components/features/features.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    SwiperComponent
+    SwiperComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
